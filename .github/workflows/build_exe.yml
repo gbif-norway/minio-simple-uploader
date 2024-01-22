@@ -1,4 +1,6 @@
 name: Build Windows Executable
+env:
+  RELEASE_TAG: v1.0.0
 
 on:
   push:
@@ -13,7 +15,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.11.2'
+        python-version: '3.11.7'
 
     - name: Install PyInstaller
       run: pip install pyinstaller

@@ -33,13 +33,9 @@ python minio-upload.py <path_to_file> <bucket_name> <endpoint> <access_key> <sec
 #### Using the Windows Executable
 
 For Windows users, an executable file is available in the Releases section of this repository.
-
 Download the minio-upload.exe from the latest release.
-
 Open Command Prompt and navigate to the directory where minio-upload.exe is located.
-
 Run the executable with the necessary parameters:
-
 ```cmd
 minio-upload.exe <path_to_file> <bucket_name> <endpoint> <access_key> <secret_key>
 ```

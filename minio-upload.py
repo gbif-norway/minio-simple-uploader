@@ -40,24 +40,6 @@ def upload_file_to_minio(file_path, bucket_name, endpoint, access_key, secret_ke
         print(f"An error occurred during upload: {e}")
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python script.py <path_to_file>")
-        sys.exit(1)
-
-    file_path = sys.argv[1]
-
-    # Check if the file exists
-    if not os.path.isfile(file_path):
-        print(f"The file '{file_path}' does not exist.")
-        sys.exit(1)
-
-    # Specify your MinIO bucket name here
-    bucket_name = "misc-collections"
-
-    # Upload the file
-    upload_file_to_minio(file_path, bucket_name)
-
-def main():
     if len(sys.argv) != 6:
         print("Usage: python script.py <path_to_file> <bucket_name> <endpoint> <access_key> <secret_key>")
         sys.exit(1)
